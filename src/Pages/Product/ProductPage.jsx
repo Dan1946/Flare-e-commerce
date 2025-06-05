@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import styles from "./ProductPage.module.css";
+import styles from "./ProductPage2.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useCartContext } from "../../contexts/CartContext";
 import Loader from "../../components/Loader/Loader";
 import { toast } from "react-toastify";
 import RatingStars from "../../components/RatingStar/RatingStar";
+import QuantitySelect from "../../components/QuantitySelect/QuantitySelect";
 
 function ProductPage({ items, capitalize}) {
   const {addToCart, isInCart}  = useCartContext()
@@ -249,8 +250,8 @@ function ProductPage({ items, capitalize}) {
           </div>
 
           <div className={styles.qty}>
-            <div>Qty</div>{" "}
-            <div>
+            {/* <div>Qty</div>{" "} */}
+            {/* <div>
               <select name="" id="qty" value={1}>
                 <option value="" disabled>
                   0
@@ -260,7 +261,9 @@ function ProductPage({ items, capitalize}) {
                 <option value="3">3</option>
                 <option value="4">4</option>
               </select>
-            </div>
+             
+            </div> */}
+             <QuantitySelect/>
           </div>
 
           <button

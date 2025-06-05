@@ -63,7 +63,7 @@
 .rating {
     display: flex;
     align-items: center;
-    gap: .2rem;
+    gap: .3rem;
 }
 
 .itemDescription {
@@ -107,6 +107,7 @@
 .ratingNo {
     color: #777777;
     font-size: 14px;
+    padding-top: 3px;
 }
 
 .priceRateDiv {
@@ -179,6 +180,10 @@
     .itemContent, .itemDescription,  .itemSold, .rating, .ratingNo {
         /* transform: scale(1.05); */
         transform-origin: left;
+    }
+
+    .subcontent {
+        gap: .8rem;
     }
 
     .itemDescription {

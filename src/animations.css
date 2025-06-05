@@ -11,6 +11,29 @@
     border-radius: 10px;
     position: relative;
   }
+
+  @keyframes floating {
+    0% {
+        transform: translateY(0px);
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateY(16px);
+        transform: translateX(4px);
+    }
+
+    /* 90% {
+      transform: translateY(-3px);
+      transform: translateX(-5px);
+    } */
+
+
+    100% {
+        transform: translateY(-0px);
+        transform: translateX(-0px);
+    }
+}
   
   /* Pop-up Animation */
   @keyframes popup {

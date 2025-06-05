@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCartContext } from "../../contexts/CartContext";
 
 function Navbar({ categoryNames, categoryMap }) {
@@ -27,6 +27,7 @@ function Navbar({ categoryNames, categoryMap }) {
   const [openSearchDropDown, setOpenSearchDropDown] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState("");
   const [scrollDir, setScrollDir] = useState(null);
+  const navigate = useNavigate()
   let categories;
   // let categoryMap = new Map();
 
@@ -84,11 +85,11 @@ function Navbar({ categoryNames, categoryMap }) {
         )}
 
         <div className={styles.leftSectionMobile}>
-          <div className={styles.arrowDiv}>
+          <div className={styles.arrowDiv} onClick={() => navigate(-1)}>
             <img src="../assets/icons8-left-arrow-37.png" alt="" />
           </div>
 
-          <div className={styles.secondLogo}>TEMU</div>
+          <div className={styles.secondLogo}>FLARE</div>
         </div>
 
         <ul className={styles.leftSection}>

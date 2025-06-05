@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import styles from "./CartPage.module.css";
+import styles from "./CartPage2.module.css";
 import { useNavigate } from "react-router-dom";
 import { useCartContext } from "../../contexts/CartContext";
 import RatingStars from "../../components/RatingStar/RatingStar";
@@ -90,7 +90,10 @@ function CartPage({ capitalize }) {
                 </div>
               ))
             ) : (
-              <div className={styles.noItems}>Cart is currently empty</div>
+              <div className={styles.emptyDiv}>
+                <div className={styles.emptyCart}><img src="../assets/icons8-empty-cart-64.png" alt="" /></div>
+                <div className={styles.noItems}>Cart is currently empty</div>
+              </div> 
             )}
           </div>
         </div>{" "}
