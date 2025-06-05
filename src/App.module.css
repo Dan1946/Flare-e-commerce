@@ -1,0 +1,32 @@
+@import "./animations.css";
+
+.App {
+    width: 100%;
+    height: 100%;
+    min-width: fit-content;
+    max-width: 100%;
+    background-color: rgb(246, 243, 243);
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.errorContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.errorBtn {
+    width: unset;
+    margin: 0;
+    
+}
+
+@media (max-width: 690px) {
+    .App {
+        overflow-x: hidden;
+        /* padding: 0 10px 0 10px; */
+    }
+}

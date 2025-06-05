@@ -1,0 +1,264 @@
+@import "../../animations.css";
+
+.signInSection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    /* align-items: center; */
+    background-color: white;
+    padding: 30px;
+    font-family: "Montserrat", sans-serif;
+    gap: 0.3rem;
+    /* justify-content: center; */
+}
+
+.logo { 
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    gap: .2rem;
+    width: 100%;
+    color: #3B82F6;
+    letter-spacing: 0.1rem;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slideRight 1s ease-in-out;
+}
+
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 6rem;
+    /* padding: 0 40px 0 40px; */
+}
+
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    border: 1px solid #3B82F6;
+    border-radius: 40px;
+    gap: 1rem;
+    align-items: center;
+    animation: popup 0.5s ease-out;
+}
+
+
+
+
+.title {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Montserrat"
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    font-weight: 600;
+}
+
+.btnContainer .btn {
+    border: 1px solid black;
+    border-radius: 99999px;
+    padding: 7px 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    display: flex;
+    gap: 0.2rem;
+    cursor: pointer;
+    transition: all 150ms;
+    white-space: nowrap;
+    animation: fadeUp 1s ease-in-out;
+    /* animation-delay: 1s; */
+    /* align-items: center; */
+}
+
+.btn:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.signEmailContainer {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 1px;
+    background-color: rgb(155, 155, 155);
+    width: 89px;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.inputDiv  input {
+    border: 1px solid rgb(205, 204, 204);
+    border-radius: 9999px;
+    width: 335px;
+    height: 40px;
+    padding: 0 10px 0 10px;  
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.inputDiv input:focus {
+    /* border: 0px solid black; */
+    outline: 1px solid black;
+}
+
+.termsDiv {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.termsContent {
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.termsContent a {
+    text-decoration: none;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.signupBtn {
+    padding: 10px 140px;
+    border-radius: 9999px;
+    border: none; 
+    background-color: rgb(242, 242, 242);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Monserrat";
+}
+
+.link a {
+    color: #3B82F6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.emailContent {
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: rgb(153, 152, 152);
+}
+
+.reviewerPicDiv img {
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+.reviewContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 20px;
+}
+
+.arrowDivOne img {
+    transform: rotateY(180deg);
+}
+
+.arrowDivOne, .arrowDivTwo {
+    padding: 5px;
+    border-radius: 40px;
+    transition: background-color, 150ms, ease-in-out;
+    cursor: pointer;
+}
+
+
+.arrowDivOne:hover, .arrowDivTwo:hover {
+    background-color: rgb(246, 246, 246);
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 45px;
+    background-color: rgb(242, 241, 241);
+    padding: 25px;
+    animation: slide-left .15s linear;
+    /* animation-delay: 1s; */
+    animation-fill-mode: forwards;
+}
+
+.testimonialGO {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 45px;
+    background-color: rgb(242, 241, 241);
+    padding: 25px;
+    animation: slide-lefter .15s linear;
+    /* animation-fill-mode: forwards; */
+}
+
+.logoPic img {
+    /* width: 400px; */
+    height: 90px;
+}
+
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-lefter {
+    
+    0% {
+        transform: translateX(70%);
+        opacity: 0;
+    }
+
+    /* 50% {
+        transform: translateX(70%);
+        opacity: 0;
+    } */
+}
+
+.reviewContent {
+    font-family: "Montserrat";
+    font-size: 15px;
+    width: 300px;
+}
+
+.reviewDiv {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.reviewerName {
+    display: flex;
+    flex-direction: column;
+}

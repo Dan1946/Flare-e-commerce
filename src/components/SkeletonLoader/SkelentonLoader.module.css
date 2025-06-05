@@ -1,0 +1,119 @@
+/* SkeletonLoader.module.css */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  /* Product Card Skeleton */
+  .productCard {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: white;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .productImage {
+    margin-bottom: 16px;
+  }
+  
+  .productTitle {
+    margin-bottom: 12px;
+  }
+  
+  .productPrice {
+    margin-bottom: 8px;
+  }
+  
+  .productDescription {
+    margin-bottom: 12px;
+  }
+  
+  .productRating {
+    margin-bottom: 16px;
+  }
+  
+  /* Product Details Page Skeleton */
+  .productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .productDetails {
+      flex-direction: row;
+    }
+  }
+  
+  .productGallery {
+    flex: 1;
+  }
+  
+  .mainImage {
+    margin-bottom: 16px;
+  }
+  
+  .thumbnails {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .productInfo {
+    flex: 1;
+    padding: 0 16px;
+  }
+  
+  .addToCartButton {
+    margin-top: 24px;
+  }
+  
+  /* Review Skeleton */
+  .review {
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 16px;
+  }
+  
+  .reviewHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .reviewUser {
+    margin-left: 12px;
+    flex: 1;
+  }
+  
+  .reviewRating {
+    margin-bottom: 8px;
+  }
+  
+  /* Product Grid */
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Add pulse effect on hover for interactive feel */
+  .skeleton:hover {
+    animation-duration: 1s;
+  }

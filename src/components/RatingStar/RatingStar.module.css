@@ -1,0 +1,20 @@
+.ratingContainer {
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+  
+  .star {
+    display: inline-block;
+    margin-right: 2px;
+  }
+  
+  .starIcon {
+    vertical-align: middle;
+  }
+  
+  .ratingText {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #666;
+  }
