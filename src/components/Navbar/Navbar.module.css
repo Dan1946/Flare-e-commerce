@@ -16,6 +16,7 @@
     color: #222222;
     position: relative;
     animation: fadeDown 0.5s ease-in-out;
+    box-shadow: 0px 1px 2px 2px rgb(214, 214, 214);
     /* width: 100%; */
     /* min-width: 1200px; */
     /* scroll-behavior: auto; */
@@ -653,12 +654,13 @@
         display: none;
     }
 
-    .cartDiv img {
+    .cartImg {
         transform: scale(1.4);
     }
 
     .navbar {
         gap: 1rem;
+        align-items: center;
     }
 
     .leftSection {
@@ -689,5 +691,13 @@
 
     .searchDropDownMenu {
         width: fit-content;
+    }
+
+    .inputDiv {
+        scale: 1.1;
+    }
+
+    .navUser {
+        size: 40;
     }
 }

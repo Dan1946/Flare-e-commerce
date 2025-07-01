@@ -205,8 +205,8 @@
         justify-content: center;
         gap: 15px;
         width: 100%;
-        padding: 10px;
-        row-gap: 50px;
+        padding: 30px; /*10*/
+        row-gap: 60px; /*50*/
         column-gap: 20px;
         overflow-x: hidden;
     }

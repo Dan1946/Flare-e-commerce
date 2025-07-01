@@ -3,6 +3,15 @@ import styles from "./Navbar.module.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useCartContext } from "../../contexts/CartContext";
+import { CiShoppingCart } from "react-icons/ci";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { CiUser } from "react-icons/ci";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
+import { IoIosArrowDown } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdDeleteOutline } from "react-icons/md";
+
+
 
 function Navbar({ categoryNames, categoryMap }) {
   // const categoryNames = [
@@ -86,7 +95,8 @@ function Navbar({ categoryNames, categoryMap }) {
 
         <div className={styles.leftSectionMobile}>
           <div className={styles.arrowDiv} onClick={() => navigate(-1)}>
-            <img src="../assets/icons8-left-arrow-37.png" alt="" />
+            {/* <img src="../assets/icons8-left-arrow-37.png" alt="" /> */}
+            <MdKeyboardArrowLeft size={45}/>
           </div>
 
           <div className={styles.secondLogo}>FLARE</div>
@@ -144,7 +154,9 @@ function Navbar({ categoryNames, categoryMap }) {
           >
             <div className={styles.title}>Categories</div>
             <div className={styles.arrow}>
-              <img src="../assets/icons8-arrow-down-10.png" alt="" />
+              {/* <img src="../assets/icons8-arrow-down-10.png" alt="" /> */}
+              {/* <MdKeyboardArrowLeft className={styles.arrowLeft} size={20}/> */}
+              <IoIosArrowDown size={15} color="gray"/>
             </div>
 
             <div
@@ -189,12 +201,13 @@ function Navbar({ categoryNames, categoryMap }) {
                   <h2 className={styles.categoryTitle}>
                     All {hoveredCategory}
                   </h2>
-                  <img
+                  {/* <img
                     width="15"
                     height="15"
                     src="https://img.icons8.com/ios-filled/50/forward--v1.png"
                     alt="forward--v1"
-                  />
+                  /> */}
+                  <MdKeyboardArrowRight size={40}/>
                 </div>
 
                 <div className={styles.itemsContainer}>
@@ -214,105 +227,6 @@ function Navbar({ categoryNames, categoryMap }) {
                       );
                     })}
 
-                  {/* <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/lotus-design-n-print-oCw5_evbWyI-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/lotus-design-n-print-UDDULE_eIBY-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/collov-home-design--aDGbdTsBZg-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/sven-brandsma-3hEGHI4b4gg-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/roam-in-color-zzMb7jacyBc-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/roam-in-color-zzMb7jacyBc-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/roam-in-color-zzMb7jacyBc-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/roam-in-color-zzMb7jacyBc-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div>
-
-                  <div className={styles.item}>
-                    <div className={styles.imageDiv}>
-                      <img
-                        src="../assets/roam-in-color-zzMb7jacyBc-unsplash.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div className={styles.itemName}>Kitchen</div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -354,7 +268,8 @@ function Navbar({ categoryNames, categoryMap }) {
                 <div className={styles.recentlyHeader}>
                   <div className={styles.recently}>Recently searched</div>{" "}
                   <div className={styles.deleteButtonDiv}>
-                    <img src="../assets/icons8-delete-18.png" alt="" />
+                    {/* <img src="../assets/icons8-delete-18.png" alt="" /> */}
+                    <MdDeleteOutline size={22} color="gray"/>
                   </div>
                 </div>
 
@@ -467,7 +382,7 @@ function Navbar({ categoryNames, categoryMap }) {
           </div>
 
           <div className={styles.hamburgerMenu}>
-            <div>
+            {/* <div>
               <img
                 src="../assets/icons8-menu-vertical-31.png"
                 alt=""
@@ -476,13 +391,15 @@ function Navbar({ categoryNames, categoryMap }) {
             </div>
             <div>
               <img src="../assets/icons8-menu-31.png" alt="" />
-            </div>
+            </div> */}
+            
+          <HiOutlineMenuAlt2 size={45}/>
           </div>
 
           <Link to={"/sign-in"} className={styles.orderLink}>
             <div className={styles.orderAccountContainer}>
               <div className={styles.iconDiv}>
-                <img
+                {/* <img
                   src="../assets/icons8-user-30.png"
                   alt=""
                   className={styles.userPicOne}
@@ -491,7 +408,8 @@ function Navbar({ categoryNames, categoryMap }) {
                   src="../assets/icons8-user-31.png"
                   alt=""
                   className={styles.userPicTwo}
-                />
+                /> */}
+                <CiUser size={36} className={styles.navUser}/>
               </div>
               <div className={styles.orderContainer}>Order & Account</div>
 
@@ -536,7 +454,8 @@ function Navbar({ categoryNames, categoryMap }) {
 
           <Link to={"/cart"}>
             <div className={styles.cartDiv}>
-              <img src="../assets/icons8-cart-31.png" alt="" />
+              {/* <img src="../assets/icons8-cart-31.png" alt="" /> */}
+              <CiShoppingCart  size={35} color="black" className={styles.cartImg}/>
               {cart.length > 0 && <div className={styles.cartCount}>{cart.length}</div>}
             </div>
           </Link>

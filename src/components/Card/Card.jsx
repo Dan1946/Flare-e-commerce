@@ -1,8 +1,12 @@
 import { useState } from "react";
 import styles from "./Card.module.css";
 import RatingStars from "../RatingStar/RatingStar";
+import { BsCartPlus } from "react-icons/bs";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
-function Card({ item }) {
+
+function Card({ item, isSlowConnection }) {
   const [top, setTop] = useState(0);
   const [right, setRight] = useState(0);
   const [left, setLeft] = useState(0);
@@ -21,15 +25,15 @@ function Card({ item }) {
   return (
     <div onMouseEnter={handleDecriptionPositiing} className={styles.itemCard}>
       <div className={styles.wrapper}>
-        <div className={styles.itemPicDiv}>
+        {isSlowConnection ? <div className={styles.itemPicDiv}>
           <img className={styles.itemPicture} src={item.image} alt="" />
-        </div>
+        </div> : <Skeleton height={400}/>}
       </div>
 
       <div className={styles.itemContent}>
-        <div className={styles.itemDescription}>{item.title.length <= 23 ? item.title : item.title.slice(0, 24) + "..."}</div>
+        {item ? <div className={styles.itemDescription}>{item.title.length <= 23 ? item.title : item.title.slice(0, 24) + "..."}</div> : <Skeleton/>}
         <div className={styles.subcontent}>
-          <div className={styles.itemPrices}>
+          {item ? <div className={styles.itemPrices}>
             <div className={styles.priceRateDiv}>
               <span className={styles.itemPrice}>&#8358;{item.price.toFixed() * 155}</span>
               <span className={styles.itemSold}>{item.rating.rate}k+ sold</span>
@@ -40,22 +44,23 @@ function Card({ item }) {
 
             <div className={styles.cartWrapper}>
               <div className={styles.cartDiv}>
-                <img src="../assets/icons8-add-shopping-cart-23.png" alt="" />
+                {/* <img src="../assets/icons8-add-shopping-cart-23.png" alt="" /> */}
+                {<BsCartPlus size={22}/> ?? <Skeleton/>}
               </div>
             </div>
 
-          </div>
-          <div className={styles.rating}>
+          </div> : <Skeleton/>}
+          {item ? <div className={styles.rating}>
             <RatingStars rating={item.rating.rate} starColor="#000000"/>
             <div className={styles.ratingNo}>
               {item.rating.count
                 ? item.rating.count
                 : (item.price * item.rating.rate).toFixed()}
             </div>
-          </div>
+          </div> : <Skeleton/>}
         </div>
       </div>
-      {top != 0 && right != 0 && (
+      {item && top != 0 && right != 0 && (
         <div
           className={styles.toolTip}
           style={{ top: top, right: right, left: left }}

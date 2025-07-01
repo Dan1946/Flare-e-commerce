@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import styles from "./App.module.css";
 import axios from "axios";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,6 +10,7 @@ import { CartProvider } from "./contexts/CartContext";
 import CartPage from "./Pages/Cart/CartPage";
 import Loader from "./components/Loader/Loader";
 import { toast } from "react-toastify";
+import { useNetworkState } from "react-use";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -18,6 +19,8 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [reload, setReload] = useState(false);
+  const network = useNetworkState()
+  const isSlowConnection = network.effectiveType === "slow-3g" || network.effectiveType === "3g" || (network.downlink && network.downlink < 1.5)
   const c = [];
   let categories;
   const location = useLocation();
@@ -27,25 +30,6 @@ function App() {
     return str[0].toUpperCase() + str.slice(1, str.length);
   };
 
-  const updateCart = (item) => {
-    if (!item) return;
-
-    const prevCartItems = JSON.parse(localStorage.getItem("cart"));
-    !prevCartItems
-      ? localStorage.setItem("cart", JSON.stringify([item]))
-      : localStorage.setItem(
-          "cart",
-          JSON.stringify([...prevCartItems, cartItem])
-        );
-  };
-
-  const removeCartItem = (itemToDelete) => {
-    const prevCartItems = JSON.parse(localStorage.getItem("cart"));
-    const filteredCart = prevCartItems.filter(
-      (item) => item.id != itemToDelete.id
-    );
-    localStorage.setItem("cart", JSON.stringify(filteredCart));
-  };
 
   useEffect(() => {
     try {
@@ -97,7 +81,7 @@ function App() {
         setCategoryNames(c);
       });
 
-      toast.success("Content Loaded Sucessfully");
+      items.length > 0 && toast.success("Content Loaded Sucessfully");
     } catch (error) {
       toast.error("An Error Occurred");
     } finally {
@@ -137,6 +121,19 @@ function App() {
   //   );
   // }
 
+  useEffect(() => {
+    if (!isSlowConnection || items.length > 0) {
+    toast.success("Content Loaded Sucessfully")
+    
+  } else if (isSlowConnection) {
+    toast.error("Check your network connection")
+  } else {
+    setReload(true)
+  }
+  }, [reload])
+  
+ 
+
 
   return (
     <div className={styles.App}>
@@ -149,7 +146,7 @@ function App() {
           <Route
             path="/"
             element={
-              loading ? <Loader theme="blue" /> : <CardList items={items} />
+              loading ? <Loader theme="blue" /> : <CardList items={items} isSlowConnection={isSlowConnection}/>
             }
           />
           <Route

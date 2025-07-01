@@ -5,7 +5,7 @@ import { useState } from "react";
 import Card from "../Card/Card";
 import { Link } from "react-router-dom";
 
-function CardList({ items }) {
+function CardList({ items, isSlowConnection}) {
   // const [items, setItems] = useState([]);
 
   const onMobile = () => {
@@ -14,25 +14,7 @@ function CardList({ items }) {
 
   if (onMobile()) console.log("On a mobile device");
 
-  // useEffect(() => {
-  //   axios.get("https://fakestoreapi.com/products?limit=20").then((res) => {
-  //     setItems(res.data);
-  //     // console.log(res.data)
-  //   });
-  // }, []);
-
-  // useEffect(() => {
-  //   axios.get("https://dummyjson.com/products?limit=190").then((res) => {
-  //     console.log(res.data);
-      
-  //     const products = res.data.products.map((product) => {
-  //       return {id: product.id, title: product.title, image: product.thumbnail, description: product.description, price: product.price, rating: {rate: product.rating}, discount: product.discountPercentage}
-  //     })
-
-  //     setItems((prev) => [...prev, ...products])
-
-  //   });
-  // }, []);
+  
 
   return (
     <>
@@ -41,7 +23,7 @@ function CardList({ items }) {
         <div className={styles.gridContainer}>
           {items.map((item) => (
             <Link to={`/item/${item.id}`} className={styles.cardLink}>
-            <Card item={item} key={crypto.randomUUID()} />
+            <Card item={item} key={crypto.randomUUID()} isSlowConnection={isSlowConnection}/>
             </Link>
           ))}
           {/* <div className={styles.itemCard}>
