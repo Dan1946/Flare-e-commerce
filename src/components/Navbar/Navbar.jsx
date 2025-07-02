@@ -95,7 +95,7 @@ function Navbar({ categoryNames, categoryMap }) {
 
         <div className={styles.leftSectionMobile}>
           <div className={styles.arrowDiv} onClick={() => navigate(-1)}>
-            {/* <img src="../assets/icons8-left-arrow-37.png" alt="" /> */}
+            {/* <img src="/icons8-left-arrow-37.png" alt="" /> */}
             <MdKeyboardArrowLeft size={45}/>
           </div>
 
@@ -104,7 +104,7 @@ function Navbar({ categoryNames, categoryMap }) {
 
         <ul className={styles.leftSection}>
           {/* <div className={styles.arrowDiv}>
-            <img src="../assets/icons8-left-arrow-37.png" alt="" />
+            <img src="/icons8-left-arrow-37.png" alt="" />
           </div>
 
           <div className={styles.secondLogo}>TEMU</div> */}
@@ -113,28 +113,28 @@ function Navbar({ categoryNames, categoryMap }) {
 
             <Link to={"/"}>
             <div className={styles.logoDiv}>
-              <img src="../assets/flare-high-resolution-logo-transparent.png" alt="" />
+              <img src="/flare-high-resolution-logo-transparent.png" alt="" />
             </div>
             </Link>
             
           </li>
           <li className={styles.link}>
             <div>
-              <img src="../assets/icons8-best-19.png" alt="" />
+              <img src="/icons8-best-19.png" alt="" />
             </div>{" "}
             <div>Best-Selling Items</div>
           </li>
 
           <li className={styles.link}>
             <div>
-              <img src="../assets/icons8-rating-19.png" alt="" />
+              <img src="/icons8-rating-19.png" alt="" />
             </div>{" "}
             <div>5-Star Rated</div>
           </li>
 
           <li className={styles.link}>
             <div>
-              <img src="../assets/icons8-discount-19.png" alt="" />
+              <img src="/icons8-discount-19.png" alt="" />
             </div>{" "}
             <div>Special Offers</div>
           </li>
@@ -154,7 +154,7 @@ function Navbar({ categoryNames, categoryMap }) {
           >
             <div className={styles.title}>Categories</div>
             <div className={styles.arrow}>
-              {/* <img src="../assets/icons8-arrow-down-10.png" alt="" /> */}
+              {/* <img src="/icons8-arrow-down-10.png" alt="" /> */}
               {/* <MdKeyboardArrowLeft className={styles.arrowLeft} size={20}/> */}
               <IoIosArrowDown size={15} color="gray"/>
             </div>
@@ -167,12 +167,12 @@ function Navbar({ categoryNames, categoryMap }) {
               <div className={styles.categoryNames}>
                 <div className={styles.categoryNameContainer}>
                   <div className={styles.categoryName}>Women's Shoes</div>
-                  <img src="../assets/icons8-right-arrow-11.png" alt="" />
+                  <img src="/icons8-right-arrow-11.png" alt="" />
                 </div>
 
                 <div className={styles.categoryNameContainer}>
                   <div className={styles.categoryName}>Men's Clothing</div>
-                  <img src="../assets/icons8-right-arrow-11.png" alt="" />
+                  <img src="/icons8-right-arrow-11.png" alt="" />
                 </div>
 
                 {categoryNames.map((categoryName, id) => {
@@ -186,14 +186,14 @@ function Navbar({ categoryNames, categoryMap }) {
                       onMouseEnter={() => setHoveredCategory(categoryName)}
                     >
                       <div className={styles.categoryName}>{categoryName}</div>
-                      <img src="../assets/icons8-right-arrow-11.png" alt="" />
+                      <img src="/icons8-right-arrow-11.png" alt="" />
                     </div>
                   );
                 })}
 
                 <div className={styles.categoryNameContainer}>
                   <div className={styles.categoryName}>Men's Shoes</div>
-                  <img src="../assets/icons8-right-arrow-11.png" alt="" />
+                  <img src="/icons8-right-arrow-11.png" alt="" />
                 </div>
               </div>
               <div className={styles.categoryItemsContainer}>
@@ -268,7 +268,7 @@ function Navbar({ categoryNames, categoryMap }) {
                 <div className={styles.recentlyHeader}>
                   <div className={styles.recently}>Recently searched</div>{" "}
                   <div className={styles.deleteButtonDiv}>
-                    {/* <img src="../assets/icons8-delete-18.png" alt="" /> */}
+                    {/* <img src="/icons8-delete-18.png" alt="" /> */}
                     <MdDeleteOutline size={22} color="gray"/>
                   </div>
                 </div>
@@ -276,7 +276,7 @@ function Navbar({ categoryNames, categoryMap }) {
                 <div className={styles.searchedItemsContainer}>
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
-                      <img src="../assets/red-shoe.jpg" alt="" />
+                      <img src="/red-shoe.jpg" alt="" />
                     </div>
                     <div className={styles.searchedItemName}>shoe</div>
                   </div>
@@ -284,7 +284,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/fabian-heimann-4R_WEmhx8og-unsplash.jpg"
+                        src="/fabian-heimann-4R_WEmhx8og-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -294,7 +294,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
+                        src="/jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -306,7 +306,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/alexandar-todov-vDTgx5wJwao-unsplash.jpg"
+                        src="/alexandar-todov-vDTgx5wJwao-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -318,7 +318,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/rezwan-ahmed-C1uFlpNdQh0-unsplash.jpg"
+                        src="/rezwan-ahmed-C1uFlpNdQh0-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -330,7 +330,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/yang-deng-2loKxdi6Hmo-unsplash.jpg"
+                        src="/yang-deng-2loKxdi6Hmo-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -348,7 +348,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/ruan-richard-rodrigues-m7D_mI4bgeI-unsplash.jpg"
+                        src="/ruan-richard-rodrigues-m7D_mI4bgeI-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -360,7 +360,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/charlesdeluvio-1-nx1QR5dTE-unsplash.jpg"
+                        src="/charlesdeluvio-1-nx1QR5dTE-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -370,7 +370,7 @@ function Navbar({ categoryNames, categoryMap }) {
                   <div className={styles.searchedItem}>
                     <div className={styles.itemPicDiv}>
                       <img
-                        src="../assets/mahdi-bafande-XCU9ZV_ys5w-unsplash.jpg"
+                        src="/mahdi-bafande-XCU9ZV_ys5w-unsplash.jpg"
                         alt=""
                       />
                     </div>
@@ -384,13 +384,13 @@ function Navbar({ categoryNames, categoryMap }) {
           <div className={styles.hamburgerMenu}>
             {/* <div>
               <img
-                src="../assets/icons8-menu-vertical-31.png"
+                src="/icons8-menu-vertical-31.png"
                 alt=""
                 className={styles.vertical}
               />
             </div>
             <div>
-              <img src="../assets/icons8-menu-31.png" alt="" />
+              <img src="/icons8-menu-31.png" alt="" />
             </div> */}
             
           <HiOutlineMenuAlt2 size={45}/>
@@ -400,12 +400,12 @@ function Navbar({ categoryNames, categoryMap }) {
             <div className={styles.orderAccountContainer}>
               <div className={styles.iconDiv}>
                 {/* <img
-                  src="../assets/icons8-user-30.png"
+                  src="/icons8-user-30.png"
                   alt=""
                   className={styles.userPicOne}
                 />
                 <img
-                  src="../assets/icons8-user-31.png"
+                  src="/icons8-user-31.png"
                   alt=""
                   className={styles.userPicTwo}
                 /> */}
@@ -454,7 +454,7 @@ function Navbar({ categoryNames, categoryMap }) {
 
           <Link to={"/cart"}>
             <div className={styles.cartDiv}>
-              {/* <img src="../assets/icons8-cart-31.png" alt="" /> */}
+              {/* <img src="/icons8-cart-31.png" alt="" /> */}
               <CiShoppingCart  size={35} color="black" className={styles.cartImg}/>
               {cart.length > 0 && <div className={styles.cartCount}>{cart.length}</div>}
             </div>
@@ -464,7 +464,7 @@ function Navbar({ categoryNames, categoryMap }) {
       </nav>
       {/* <div className={styles.notification}>
         <div>
-          <img src="../assets/icons8-success-24.png" alt="" />
+          <img src="/icons8-success-24.png" alt="" />
         </div>
         Successfully saved!
       </div> */}

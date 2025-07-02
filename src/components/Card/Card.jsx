@@ -44,7 +44,7 @@ function Card({ item, isSlowConnection }) {
 
             <div className={styles.cartWrapper}>
               <div className={styles.cartDiv}>
-                {/* <img src="../assets/icons8-add-shopping-cart-23.png" alt="" /> */}
+                {/* <img src="/icons8-add-shopping-cart-23.png" alt="" /> */}
                 {<BsCartPlus size={22}/> ?? <Skeleton/>}
               </div>
             </div>

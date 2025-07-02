@@ -26,7 +26,7 @@ function SignIn() {
       <div className={styles.logo}>
         {" "}
         <div className={styles.logoPic}>
-          <img src="../assets/flare-high-resolution-logo-transparent.png" alt="" />
+          <img src="/flare-high-resolution-logo-transparent.png" alt="" />
         </div>{" "}
         {/* <div>Anime Monarck</div> */}
       </div>
@@ -37,13 +37,13 @@ function SignIn() {
             <div className={styles.btn}>
               {" "}
               <div>
-                <img src="../assets/icons8-google-logo-17.png" alt="" />
+                <img src="/icons8-google-logo-17.png" alt="" />
               </div>{" "}
               <div>SignUp / login with Google</div>
             </div>
             <div className={styles.btn}>
               <div>
-                <img src="../assets/icons8-linkedin-17.png" alt="" />
+                <img src="/icons8-linkedin-17.png" alt="" />
               </div>{" "}
               <div>SignUp / login with LinkedIn</div>
             </div>
@@ -77,7 +77,7 @@ function SignIn() {
 
         <div className={styles.reviewContainer}>
           <div className={styles.arrowDivOne}>
-            <img src="../assets/icons8-forward-31.png" alt="" />
+            <img src="/icons8-forward-31.png" alt="" />
           </div>
 
           <div
@@ -88,7 +88,7 @@ function SignIn() {
             <div className={styles.reviewContent}>{reviews[review]}</div>
             <div className={styles.reviewDiv}>
               <div className={styles.reviewerPicDiv}>
-                <img src= {`../assets/${pictures[review]}`} alt="" />
+                <img src= {`/${pictures[review]}`} alt="" />
               </div>
               <div className={styles.reviewerName}>
                 <div>{pictures[review].split("-")[0]}</div> <span>Orum</span>
@@ -96,17 +96,17 @@ function SignIn() {
 
               <div className={styles.rating}>
                 {" "}
-                <img src="../assets/icons8-star-24.png" alt="" />
-                <img src="../assets/icons8-star-24.png" alt="" />
-                <img src="../assets/icons8-star-24.png" alt="" />
-                <img src="../assets/icons8-star-24.png" alt="" />
-                <img src="../assets/icons8-star-24.png" alt="" />
+                <img src="/icons8-star-24.png" alt="" />
+                <img src="/icons8-star-24.png" alt="" />
+                <img src="/icons8-star-24.png" alt="" />
+                <img src="/icons8-star-24.png" alt="" />
+                <img src="/icons8-star-24.png" alt="" />
               </div>
             </div>
           </div>
 
           <div className={styles.arrowDivTwo}>
-            <img src="../assets/icons8-forward-31.png" alt="" />
+            <img src="/icons8-forward-31.png" alt="" />
           </div>
         </div>
       </div>

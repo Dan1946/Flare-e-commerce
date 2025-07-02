@@ -18,7 +18,7 @@ function CartPage({ capitalize }) {
           Home
         </div>{" "}
         <div className={styles.miniArrow}>
-          <img src="../assets/icons8-arrow-19.png" alt="" />
+          <img src="/icons8-arrow-19.png" alt="" />
         </div>{" "}
         <div className={styles.subLink}>Cart</div>
       </div>
@@ -47,14 +47,14 @@ function CartPage({ capitalize }) {
                             className={styles.deleteDiv}
                             onClick={() => deleteFromCart(item)}
                           >
-                            <img src="../assets/icons8-delete-18.png" alt="" />
+                            <img src="/icons8-delete-18.png" alt="" />
                           </div>
                           <span>1</span>
                           <div className={styles.plusDiv}>+</div>
                         </div>
 
                         <div className={styles.favoriteDiv}>
-                          {/* <img src="../assets/icons8-love-18.png" alt="" /> */}
+                          {/* <img src="/icons8-love-18.png" alt="" /> */}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -91,7 +91,7 @@ function CartPage({ capitalize }) {
               ))
             ) : (
               <div className={styles.emptyDiv}>
-                <div className={styles.emptyCart}><img src="../assets/icons8-empty-cart-64.png" alt="" /></div>
+                <div className={styles.emptyCart}><img src="/icons8-empty-cart-64.png" alt="" /></div>
                 <div className={styles.noItems}>Cart is currently empty</div>
               </div> 
             )}
@@ -104,7 +104,7 @@ function CartPage({ capitalize }) {
             <div className={styles.subtotal}>
               <span>Subtotal</span>{" "}
               <div>
-                <img src="../assets/icons8-plus-20.png" alt="" />
+                <img src="/icons8-plus-20.png" alt="" />
               </div>
             </div>
             <div className={styles.price}>&#8358;{totalAmount}</div>

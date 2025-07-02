@@ -20,7 +20,7 @@ function App() {
   const [error, setError] = useState(false);
   const [reload, setReload] = useState(false);
   const network = useNetworkState()
-  const isSlowConnection = network.effectiveType === "slow-3g" || network.effectiveType === "3g" || (network.downlink && network.downlink < 1.5)
+  const isSlowConnection = network.effectiveType === "slow-2g" || network.effectiveType === "3g" || (network.downlink && network.downlink < 1.5)
   const c = [];
   let categories;
   const location = useLocation();

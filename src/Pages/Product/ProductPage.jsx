@@ -6,6 +6,9 @@ import Loader from "../../components/Loader/Loader";
 import { toast } from "react-toastify";
 import RatingStars from "../../components/RatingStar/RatingStar";
 import QuantitySelect from "../../components/QuantitySelect/QuantitySelect";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 
 function ProductPage({ items, capitalize}) {
   const {addToCart, isInCart}  = useCartContext()
@@ -66,7 +69,7 @@ function ProductPage({ items, capitalize}) {
   if (currentItem.images) {
     currentPic = hoveredPic ? hoveredPic : currentItem.image;
   } else {
-    currentPic = hoveredPic ? `../assets/${hoveredPic}` : currentItem.image;
+    currentPic = hoveredPic ? `/${hoveredPic}` : currentItem.image;
   }
 
   return (
@@ -77,13 +80,13 @@ function ProductPage({ items, capitalize}) {
           Home
         </div>{" "}
         <div className={styles.miniArrow}>
-          <img src="../assets/icons8-arrow-19.png" alt="" />
+          <MdOutlineKeyboardArrowRight size={25} color="gray"/>
         </div>{" "}
         <div className={styles.subLink}>
           {currentItem.category && capitalize(currentItem.category)}
         </div>
         <div className={styles.miniArrow}>
-          <img src="../assets/icons8-arrow-19.png" alt="" />
+          <MdOutlineKeyboardArrowRight size={25} color="gray"/>
         </div>
         <div className={styles.subLink}>
           {currentItem.title.length <= 23
@@ -110,17 +113,19 @@ function ProductPage({ items, capitalize}) {
 
             <div className={styles.productPic}>
               <div className={styles.leftArrowDiv}>
-                <img
+                {/* <img
                   className={styles.leftArrow}
-                  src="../assets/icons8-arrow-19.png"
+                  src="/icons8-arrow-19.png"
                   alt=""
-                />
+                /> */}
+                <MdOutlineKeyboardArrowLeft size={30} color="gray"/>
               </div>
               <div className={styles.picDiv}>
                 <img className={styles.pic} src={currentPic} alt="" />
               </div>
               <div className={styles.rightArrowDiv}>
-                <img src="../assets/icons8-arrow-19.png" alt="" />
+                {/* <img src="/icons8-arrow-19.png" alt="" /> */}
+                <MdOutlineKeyboardArrowRight size={30} color="gray"/>
               </div>
             </div>
           </div>
@@ -158,7 +163,7 @@ function ProductPage({ items, capitalize}) {
                 <div className={styles.logoDateDiv}>
                   <div>
                     <img
-                      src="../assets/icons8-nigeria-flag-22.png"
+                      src="/icons8-nigeria-flag-22.png"
                       alt=""
                       className={styles.flag}
                     />
@@ -190,7 +195,7 @@ function ProductPage({ items, capitalize}) {
                     <div className={styles.logoDateDiv}>
                       <div>
                         <img
-                          src="../assets/icons8-nigeria-flag-22.png"
+                          src="/icons8-nigeria-flag-22.png"
                           alt=""
                           className={styles.flag}
                         />
@@ -200,11 +205,11 @@ function ProductPage({ items, capitalize}) {
                   </div>
 
                   <div className={styles.starsDiv}>
-                    {/* <img src="../assets/icons8-star-20.png" alt="" />
-                    <img src="../assets/icons8-star-20.png" alt="" />
-                    <img src="../assets/icons8-star-20.png" alt="" />
-                    <img src="../assets/icons8-star-20.png" alt="" />
-                    <img src="../assets/icons8-star-20.png" alt="" /> */}
+                    {/* <img src="/icons8-star-20.png" alt="" />
+                    <img src="/icons8-star-20.png" alt="" />
+                    <img src="/icons8-star-20.png" alt="" />
+                    <img src="/icons8-star-20.png" alt="" />
+                    <img src="/icons8-star-20.png" alt="" /> */}
                     <RatingStars rating={review.rating} starColor="#000000" width="19" height="19"/>
                   </div>
 

@@ -35,7 +35,7 @@ function CardList({ items, isSlowConnection}) {
               <div className={styles.itemPicDiv}>
                 <img
                   className={styles.itemPicture}
-                  src="../assets/laptop.jpg"
+                  src="/laptop.jpg"
                   alt=""
                 />
               </div>
@@ -52,24 +52,24 @@ function CardList({ items, isSlowConnection}) {
                 </div>
 
                 <div className={styles.cartDiv}>
-                  <img src="../assets/icons8-add-shopping-cart-23.png" alt="" />
+                  <img src="/icons8-add-shopping-cart-23.png" alt="" />
                 </div>
               </div>
               <div className={styles.rating}>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-half-12.png" alt="" />
+                  <img src="/icons8-star-half-12.png" alt="" />
                 </div>
                 <div className={styles.ratingNo}>424</div>
               </div>
@@ -80,7 +80,7 @@ function CardList({ items, isSlowConnection}) {
               <div className={styles.itemPicDiv}>
                 <img
                   className={styles.itemPicture}
-                  src="../assets/shoes.jpg"
+                  src="/shoes.jpg"
                   alt=""
                 />
               </div>
@@ -96,24 +96,24 @@ function CardList({ items, isSlowConnection}) {
                   <span className={styles.itemSold}>3.2k+ sold</span>
                 </div>
                 <div className={styles.cartDiv}>
-                  <img src="../assets/icons8-add-shopping-cart-23.png" alt="" />
+                  <img src="/icons8-add-shopping-cart-23.png" alt="" />
                 </div>
               </div>
               <div className={styles.rating}>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-half-12.png" alt="" />
+                  <img src="/icons8-star-half-12.png" alt="" />
                 </div>
                 <div className={styles.ratingNo}>424</div>
               </div>
@@ -124,7 +124,7 @@ function CardList({ items, isSlowConnection}) {
               <div className={styles.itemPicDiv}>
                 <img
                   className={styles.itemPicture}
-                  src="../assets/brown-shoes.jpg"
+                  src="/brown-shoes.jpg"
                   alt=""
                 />
               </div>
@@ -138,24 +138,24 @@ function CardList({ items, isSlowConnection}) {
                 <span className={styles.itemPrice}>&#8358;124,456</span>
                 <span className={styles.itemSold}>3.2k+ sold</span>
                 <div className={styles.cartDiv}>
-                  <img src="../assets/icons8-add-shopping-cart-23.png" alt="" />
+                  <img src="/icons8-add-shopping-cart-23.png" alt="" />
                 </div>
               </div>
               <div className={styles.rating}>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-half-12.png" alt="" />
+                  <img src="/icons8-star-half-12.png" alt="" />
                 </div>
                 <div className={styles.ratingNo}>424</div>
               </div>
@@ -166,7 +166,7 @@ function CardList({ items, isSlowConnection}) {
               <div className={styles.itemPicDiv}>
                 <img
                   className={styles.itemPicture}
-                  src="../assets/caps.jpg"
+                  src="/caps.jpg"
                   alt=""
                 />
               </div>
@@ -180,24 +180,24 @@ function CardList({ items, isSlowConnection}) {
                 <span className={styles.itemPrice}>&#8358;124,456</span>
                 <span className={styles.itemSold}>3.2k+ sold</span>
                 <div className={styles.cartDiv}>
-                  <img src="../assets/icons8-add-shopping-cart-23.png" alt="" />
+                  <img src="/icons8-add-shopping-cart-23.png" alt="" />
                 </div>
               </div>
               <div className={styles.rating}>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-half-12.png" alt="" />
+                  <img src="/icons8-star-half-12.png" alt="" />
                 </div>
                 <div className={styles.ratingNo}>424</div>
               </div>
@@ -208,7 +208,7 @@ function CardList({ items, isSlowConnection}) {
               <div className={styles.itemPicDiv}>
                 <img
                   className={styles.itemPicture}
-                  src="../assets/silver-watch.jpg"
+                  src="/silver-watch.jpg"
                   alt=""
                 />
               </div>
@@ -222,24 +222,24 @@ function CardList({ items, isSlowConnection}) {
                 <span className={styles.itemPrice}>&#8358;124,456</span>
                 <span className={styles.itemSold}>3.2k+ sold</span>
                 <div className={styles.cartDiv}>
-                  <img src="../assets/icons8-add-shopping-cart-23.png" alt="" />
+                  <img src="/icons8-add-shopping-cart-23.png" alt="" />
                 </div>
               </div>
               <div className={styles.rating}>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-12.png" alt="" />
+                  <img src="/icons8-star-12.png" alt="" />
                 </div>
                 <div>
-                  <img src="../assets/icons8-star-half-12.png" alt="" />
+                  <img src="/icons8-star-half-12.png" alt="" />
                 </div>
                 <div className={styles.ratingNo}>424</div>
               </div>
