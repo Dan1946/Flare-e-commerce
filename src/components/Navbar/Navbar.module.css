@@ -592,6 +592,10 @@
     /* border: 1px solid rgb(219, 219, 219); */
 }
 
+.searchDropDownMenu, .dropDownMenu, .supportMenu {
+    z-index: 50;
+}
+
 @media (max-width: 1200px) {
     .rightSection {
         gap: 2rem;
