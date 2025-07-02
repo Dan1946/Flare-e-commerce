@@ -3,6 +3,9 @@ import styles from "./CartPage2.module.css";
 import { useNavigate } from "react-router-dom";
 import { useCartContext } from "../../contexts/CartContext";
 import RatingStars from "../../components/RatingStar/RatingStar";
+import { FcLike } from "react-icons/fc";
+import { MdDeleteOutline } from "react-icons/md";
+
 
 function CartPage({ capitalize }) {
   const navigate = useNavigate();
@@ -47,24 +50,14 @@ function CartPage({ capitalize }) {
                             className={styles.deleteDiv}
                             onClick={() => deleteFromCart(item)}
                           >
-                            <img src="/icons8-delete-18.png" alt="" />
+                           <MdDeleteOutline size={25} color="gray"/>
                           </div>
                           <span>1</span>
                           <div className={styles.plusDiv}>+</div>
                         </div>
 
                         <div className={styles.favoriteDiv}>
-                          {/* <img src="/icons8-love-18.png" alt="" /> */}
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            // color="red"
-                            class="love-icon"
-                            viewBox="0 0 16 16"
-                          >
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                          </svg>
+                          <FcLike size={25}/>
                         </div>
                       </div>
                     </div>

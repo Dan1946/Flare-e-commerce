@@ -267,5 +267,6 @@
     .content {
         flex-direction: column;
         gap: 1rem;
+        padding: 40px;
     }
 }
